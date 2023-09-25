@@ -1,0 +1,30 @@
+.scroll_top {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	border-radius: 7px;
+	background: #3f3b3b;
+	border: 1px solid #a2a1a1;
+	color: #a2a1a1;
+	padding: 0.25rem;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.5s ease;
+}
+
+.scroll_top.visible {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.scroll_top.visible:hover {
+	transform: scale(0.9);
+}
+
+img.scroll_top {
+	width: 2rem;
+	height: 2rem;
+}
