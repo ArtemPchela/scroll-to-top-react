@@ -1,4 +1,4 @@
-# React Component scroll-to-top-react
+## React Component scroll-to-top-react
 
 Note: scroll-to-top-react works with React, Vite, Next.js, and TypeScript.
 

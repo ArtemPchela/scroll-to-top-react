@@ -16,7 +16,7 @@ const scrollToTop = () => {
     });
 };
 
-const ScrollToTopOptions = ({
+const ScrollToTop = ({
     displayType = "text",
     imageSrc,
     myClass = "",
@@ -63,4 +63,4 @@ const ScrollToTopOptions = ({
     return content;
 };
 
-export default ScrollToTopOptions;
+export default ScrollToTop;
