@@ -242,6 +242,23 @@ export default App;
 
 ## <a id="importantNextNote"></a> Important Note about Next.js
 
+If you want to use `scroll-to-top-react` with Next.js, you must create a file with import `scroll-to-top-react` and add `"use client"` on top of the file. Example:
+```tsx
+"use client"
+import ScrollToTop from 'scroll-to-top-react';
+
+const ScrollToTopComponent = () => {
+  return (
+    <>
+      <ScrollToTop />
+    </>
+  );
+};
+
+export default ScrollToTopComponent;
+```
+because "use client" is used to declare a boundary between a Server and Client Component modules. This means that by defining a "use client" in a file, all other modules imported into it, including child components, are considered part of the client bundle - and will be rendered by React on the client.
+
 If `scroll-to-top-react` use with Next.js, by default next use `Image` component for images. In this component we use `img` tag.<br/>
 That's mean it will be warning `Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element(@next/next/no-img-element)` <br/>
 
