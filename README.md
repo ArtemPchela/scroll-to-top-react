@@ -2,7 +2,7 @@
 
 Note: scroll-to-top-react works with React, Vite, Next.js, and TypeScript.
 
-[! Important Note about Next.js](#importantNextNote)
+- [! Important Note about Next.js](#importantNextNote)
 
 ## Table of Contents
 
