@@ -2,7 +2,7 @@
 
 Note: scroll-to-top-react works with React, Vite, Next.js, and TypeScript.
 
-- [! Important Note about Next.js](#importantNextNote)
+- [! Important Note about Next.js](#important)
 
 ## Table of Contents
 
@@ -240,7 +240,7 @@ const App = () => {
 export default App;
 ```
 
-## <a id="importantNextNote"></a> Important Note about Next.js
+## <a id="important"></a> Important Note about Next.js
 
 If you want to use `scroll-to-top-react` with Next.js, you must create a file with import `scroll-to-top-react` and add `"use client"` on top of the file. Example:
 ```tsx
