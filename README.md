@@ -2,7 +2,7 @@
 
 Note: scroll-to-top-react works with React, Vite, Next.js, and TypeScript.
 
-<span style="color:red; font-size: 2rem">[! Important Note about Next.js](#importantNextNote)</span>
+[! Important Note about Next.js](#importantNextNote)
 
 ## Table of Contents
 
