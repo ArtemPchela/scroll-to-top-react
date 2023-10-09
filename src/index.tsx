@@ -46,7 +46,7 @@ const ScrollToTop = ({
         case "text":
             return <div {...commonProps}>{text}</div>;
         case "htmlArrow":
-            return <div {...commonProps}>&#8682;</div>;
+            return <div {...commonProps}>&#x21e7;</div>;
         case "image":
             return imageSrc ? (
                 <img src={imageSrc} alt="To top" loading="lazy" {...commonProps}/>
