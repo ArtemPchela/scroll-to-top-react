@@ -21,7 +21,7 @@
 	visibility: visible;
 }
 
-.to_top:hover {
+.scroll_top:hover {
 	color: #58fad9;
 	transform: scale(0.9);
 }
