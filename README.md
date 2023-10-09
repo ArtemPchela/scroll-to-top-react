@@ -84,16 +84,17 @@ To import the component into your project:
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   border-radius: 7px;
-  background: #3f3b3b;
-  border: 1px solid #a2a1a1;
-  color: #a2a1a1;
+  background: #0b293b;
+  border: 2px solid #419197;
+  color: #419197;
   padding: 0.25rem;
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(100px);
   transition: all 0.5s ease;
+  font-weight: 700;
 }
 
 .scroll_top.visible {
