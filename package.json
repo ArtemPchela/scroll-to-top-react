@@ -1,6 +1,6 @@
 {
   "name": "scroll-to-top-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React scroll to top button component with pre-defined styles and animation",
   "main": "build/index.js",
   "module": "build/index.es.js",

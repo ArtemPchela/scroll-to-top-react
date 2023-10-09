@@ -19,7 +19,7 @@ const scrollToTop = () => {
 const ScrollToTop = ({
     displayType = "text",
     imageSrc,
-    myClass = "",
+    myClass = "scroll_top",
     text = "Top",
     threshold = 150,
     }: ScrollToTopProps) => {
@@ -37,30 +37,23 @@ const ScrollToTop = ({
 
     const commonProps = {
         className: isVisible
-            ? `scroll_top ${myClass} visible `
-            : `scroll_top ${myClass}`,
+            ? `${myClass} visible`
+            : `${myClass}`,
         onClick: scrollToTop,
     };
 
-    let content;
-
     switch (displayType) {
         case "text":
-            content = <div {...commonProps}>{text}</div>;
-            break;
+            return <div {...commonProps}>{text}</div>;
         case "htmlArrow":
-            content = <div {...commonProps}>&#8682;</div>;
-            break;
+            return <div {...commonProps}>&#8682;</div>;
         case "image":
-            content = imageSrc ? (
-                <img src={imageSrc} alt="To top" {...commonProps} />
+            return imageSrc ? (
+                <img src={imageSrc} alt="To top" loading="lazy" {...commonProps}/>
             ) : (
                 <div {...commonProps}>{text}</div>
             );
-            break;
     }
-
-    return content;
 };
 
 export default ScrollToTop;
