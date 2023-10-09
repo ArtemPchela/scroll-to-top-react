@@ -102,7 +102,8 @@ To import the component into your project:
   visibility: visible;
 }
 
-.scroll_top.visible:hover {
+.scroll_top:hover {
+  color: #58fad9;
   transform: scale(0.9);
 }
 
